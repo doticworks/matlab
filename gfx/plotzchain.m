@@ -1,7 +1,8 @@
-function plotzchain(zchain,lsp1,lsp2)
+function [x,y]=plotzchain(zchain,lsp1,lsp2)
     [x,y]=buildchain(zchain);
     plot(x,y,lsp1);
     plot([0,x(end)],[0,y(end)],lsp2);
+    plot([-0.6,0.6],[y(end),y(end)],lsp2);
 end
 
 
